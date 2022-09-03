@@ -2,6 +2,9 @@
 public enum Periodo {
 
 	MANHA,
-	TARDE,
-	NOITE;
+	TARDE, 
+	NOITE; 
+	
+
+
 }

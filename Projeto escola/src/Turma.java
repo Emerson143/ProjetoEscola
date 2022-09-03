@@ -1,11 +1,14 @@
 
 public class Turma {
 	private	Periodo periodo;
-	private String nomeDaTurma;
-	public Turma(Periodo periodo, String nomeDaTurma) {
+	private Curso curso;
+	
+	
+	
+	public Turma(Periodo periodo, Curso curso) {
 		
 		this.periodo = periodo;
-		this.nomeDaTurma = nomeDaTurma;
+		this.curso = curso;
 	}
 	public Periodo getPeriodo() {
 		return periodo;
@@ -13,16 +16,15 @@ public class Turma {
 	public void setPeriodo(Periodo periodo) {
 		this.periodo = periodo;
 	}
-	public String getNomeDaTurma() {
-		return nomeDaTurma;
+	public Curso getNomeDaTurma() {
+		return curso;
 	}
-	public void setNomeDaTurma(String nomeDaTurma) {
-		this.nomeDaTurma = nomeDaTurma;
+	public void setNomeDaTurma(Curso curso) {
+		this.curso = curso;
 	}
 	@Override
 	public String toString() {
-		return "Turma [periodo=" + periodo + ", nomeDaTurma=" + nomeDaTurma + "]";
+		return "periodo: " + periodo + ", Curso: " + curso ;
 	}
-	
 	
 }

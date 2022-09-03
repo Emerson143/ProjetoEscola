@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Aluno {
@@ -7,17 +6,16 @@ public class Aluno {
 	private String name;
 	private int	id;
 
-	private Materia materia;
 	private int presenca;
 	private Turma turma;
 	
 	
-	public Aluno(String name, int id, Materia materia, int presenca, Turma turma) {
+	public Aluno(String name, int id, int presenca, Turma turma) {
 		
 		this.name = name;
 		this.id = id;
 		
-		this.materia = materia;
+		
 		this.presenca = presenca;
 		this.turma = turma;
 	}
@@ -41,14 +39,6 @@ public class Aluno {
 	}
 
 
-	public Materia getMateria() {
-		return materia;
-	}
-
-	public void setMateria(Materia materia) {
-		this.materia = materia;
-	}
-
 	public int getPresenca() {
 		return presenca;
 	}
@@ -67,7 +57,7 @@ public class Aluno {
 	
 	@Override
 	public String toString() {
-		return "Aluno [nome = " + name + ", id= " + id + ", materia = " + materia.toString() + ", presenca =" + presenca + ", turma = "
+		return "Aluno [nome = " + name + ", id= " + id + ", materia =  presenca =" + presenca + ", turma = "
 				+ turma.toString() + "]";
 	}
 
@@ -100,13 +90,13 @@ public class Aluno {
 			switch ( resposta) {
 			
 			case "261" :
-			System.out.println(Dados.ListaAluno().get(0).toString());	
+			System.out.println(Dados._ListaAluno().get(0).toString());	
 				break;
 			case "268" :
-				System.out.println(Dados.ListaAluno().get(1).toString());	
+				System.out.println(Dados._ListaAluno().get(1).toString());	
 			break;	
 			case "278" :
-				System.out.println(Dados.ListaAluno().get(2).toString());
+				System.out.println(Dados._ListaAluno().get(2).toString());
 
 				break;	
 				
