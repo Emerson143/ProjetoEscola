@@ -1,0 +1,14 @@
+
+public class turnos  {
+
+	
+	private String turnoManha 
+	private 
+	
+	
+	public turnos(String name, int id) {
+		super(name, id);
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Secretaria {
+	
+	private String boletin;
+
+	
+	
+}

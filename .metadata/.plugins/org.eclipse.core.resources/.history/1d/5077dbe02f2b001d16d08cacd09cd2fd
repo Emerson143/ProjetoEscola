@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+public class Aluno {
+
+	
+	private String name;
+	private int	id;
+	private int nota;
+	private int materia;
+	private int presenca;
+	private Turma turma;
+	
+	public Aluno(String name, int id, int nota, int materia, int presenca, Turma turma) {
+		
+		this.name = name;
+		this.id = id;
+		this.nota = nota;
+		this.materia = materia;
+		this.presenca = presenca;
+		this.turma = turma;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getNota() {
+		return nota;
+	}
+
+	public void setNota(int nota) {
+		this.nota = nota;
+	}
+
+	public int getMateria() {
+		return materia;
+	}
+
+	public void setMateria(int materia) {
+		this.materia = materia;
+	}
+
+	public int getPresenca() {
+		return presenca;
+	}
+
+	public void setPresenca(int presenca) {
+		this.presenca = presenca;
+	}
+
+	public Turma getTurma() {
+		return turma;
+	}
+
+	public void setTurma(Turma turma) {
+		this.turma = turma;
+	}
+	
+	public static void acessoALuno() {
+
+		Scanner sc = new Scanner(System.in);
+		
+		
+			
+		Boolean laco = true;
+		
+		System.out.println("===========================================");
+		System.out.println("=         BEM VINDO ALUNO            =");
+		System.out.println("===========================================");
+		
+		
+		while (laco) {
+			
+			System.out.println();
+			System.out.println("******************************************");
+			System.out.println("* 1 BOLETIN ESCOLA ANO 2022              *");	
+			System.out.println("******************************************");
+			
+			System.out.print("Digite sua opção: ");
+			String resposta = sc.nextLine();
+			System.out.println();
+			
+			switch ( resposta) {
+			
+			case "1" :
+				
+				break;
+				default:
+				System.out.println("");
+				System.out.println("Opção invalida por favor digite novamente...");
+				System.out.println("");
+				System.out.print("Digite sua opção: ");
+				resposta = sc.nextLine();
+				
+			}
+		}
+	
+	}
+}

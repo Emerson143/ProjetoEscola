@@ -1,0 +1,28 @@
+
+public class Turma {
+	private	Periodo periodo;
+	private String nomeDaTurma;
+	public Turma(Periodo periodo, String nomeDaTurma) {
+		
+		this.periodo = periodo;
+		this.nomeDaTurma = nomeDaTurma;
+	}
+	public Periodo getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(Periodo periodo) {
+		this.periodo = periodo;
+	}
+	public String getNomeDaTurma() {
+		return nomeDaTurma;
+	}
+	public void setNomeDaTurma(String nomeDaTurma) {
+		this.nomeDaTurma = nomeDaTurma;
+	}
+	@Override
+	public String toString() {
+		return "Turma [periodo=" + periodo + ", nomeDaTurma=" + nomeDaTurma + "]";
+	}
+	
+	
+}

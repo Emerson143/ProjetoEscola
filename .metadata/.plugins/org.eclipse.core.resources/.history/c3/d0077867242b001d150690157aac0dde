@@ -1,0 +1,5 @@
+
+public class Secretaria {
+	private boolean acesso = 0;
+	private 
+}

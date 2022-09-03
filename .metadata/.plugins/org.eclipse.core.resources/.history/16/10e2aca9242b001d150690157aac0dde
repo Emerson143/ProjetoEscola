@@ -1,0 +1,63 @@
+
+public class Secretaria {
+	
+	private String boletin;
+	private String AdicionarAluno;
+	private String RemoveAluno;
+	private String AdicionarProf;
+	private String RemoverProf;
+	
+	public Secretaria(String boletin, String adicionarAluno, String removeAluno, String adicionarProf,
+			String removerProf) {
+		
+		this.boletin = boletin;
+		AdicionarAluno = adicionarAluno;
+		RemoveAluno = removeAluno;
+		AdicionarProf = adicionarProf;
+		RemoverProf = removerProf;
+	}
+
+	public String getBoletin() {
+		return boletin;
+	}
+
+	public void setBoletin(String boletin) {
+		this.boletin = boletin;
+	}
+
+	public String getAdicionarAluno() {
+		return AdicionarAluno;
+	}
+
+	public void setAdicionarAluno(String adicionarAluno) {
+		AdicionarAluno = adicionarAluno;
+	}
+
+	public String getRemoveAluno() {
+		return RemoveAluno;
+	}
+
+	public void setRemoveAluno(String removeAluno) {
+		RemoveAluno = removeAluno;
+	}
+
+	public String getAdicionarProf() {
+		return AdicionarProf;
+	}
+
+	public void setAdicionarProf(String adicionarProf) {
+		AdicionarProf = adicionarProf;
+	}
+
+	public String getRemoverProf() {
+		return RemoverProf;
+	}
+
+	public void setRemoverProf(String removerProf) {
+		RemoverProf = removerProf;
+	}
+	
+	
+	
+	
+}

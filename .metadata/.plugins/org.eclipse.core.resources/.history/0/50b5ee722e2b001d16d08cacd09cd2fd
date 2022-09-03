@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		
+				
+				Scanner sc = new Scanner(System.in);
+				
+				Boolean laco = true;
+				
+				System.out.println("===========================================");
+				System.out.println("=                                         =");
+				System.out.println("=        SEJAM BEM VINDO A ESCOLA         =");
+				System.out.println("=                                         =");
+				System.out.println("===========================================");
+				System.out.println();
+					
+				System.out.println("===========================================");
+				System.out.println("=ENTRE COM SUA OPÇÃO SUA OPÇÃO DE USUARIO =");
+				System.out.println("===========================================");
+				
+				
+				while (laco) {
+					
+					System.out.println();
+					System.out.println("******************************************");
+					System.out.println("* 1 - Aluno                              *");	
+					System.out.println("* 2 - Professor                          *");
+					System.out.println("* 3 - Secretaria                         *");
+			     	System.out.println("******************************************");
+					
+					System.out.print("Digite sua opção: ");
+					String resposta = sc.nextLine();
+					System.out.println();
+					
+					switch ( resposta) {
+					
+					case "1" :
+						
+						break;
+					case "2" :
+						break;
+					case "3":
+						
+						break;
+					default:
+						System.out.println("");
+						System.out.println("Opção invalida por favor digite novamente...");
+						System.out.println("");
+						System.out.print("Digite sua opção: ");
+						resposta = sc.nextLine();
+						
+					}
+				}
+
+			}
+		}
+		
+		
+	
+
+

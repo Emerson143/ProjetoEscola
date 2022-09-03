@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class Dados {
+
+	public ArrayList < Aluno > _listaAlunos =  ListaAluno();
+	
+	public static ArrayList < Aluno > ListaAluno() {
+		
+		ArrayList < Aluno > listaAluno = new ArrayList < Aluno >(); 
+		
+	listaAluno.add(new Aluno("Matheus Anderson oliveira",261,new Materia(0, "Programacao"),0,new Turma(Periodo.MANHA,"Artes cenicas")));
+		
+		
+	return listaAluno;
+}
+}

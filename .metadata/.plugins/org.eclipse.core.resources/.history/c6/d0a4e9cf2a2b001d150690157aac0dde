@@ -1,0 +1,7 @@
+
+public class Turma {
+	private	Periodo periodo;
+	private String nomeDaTurma;
+	
+	
+}
