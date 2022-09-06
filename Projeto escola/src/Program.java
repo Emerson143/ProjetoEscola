@@ -54,7 +54,9 @@ public class Program {
 						System.out.println("");
 						System.out.print("Digite sua opção: ");
 						resposta = sc.nextLine();
+					
 						
+						sc.close();
 					}
 				}
 				Professor.limpaTela();

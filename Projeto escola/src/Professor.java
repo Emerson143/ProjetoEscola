@@ -1,11 +1,15 @@
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Professor {
-
+	 
+			
+			Dados _dados = new Dados();
+	static ArrayList<Aluno> _listaAluno = Dados._ListaAluno();
 	private String name;
 	private int id;
-
+	
 	public Professor(String name, int id) {
 
 		this.name = name;
@@ -61,9 +65,10 @@ public class Professor {
 				System.out.print("Dados do aluno: " + Dados._ListaAluno().get(0).getTurma().toString());
 				
 				notadoAluno(); 
-				System.out.println();
-				sc.nextInt();
-				System.out.print("Dados do aluno: " + Dados._ListaAluno().get(0).getPresenca());
+				System.out.print("Nota do aluno: "+ _listaAluno.get(0).getPresenca());
+				
+				
+				
 				break;
 			case "268":
 				System.out.println("Aluno: " + Dados._ListaAluno().get(1).getName().toString());
@@ -79,19 +84,22 @@ public class Professor {
 				System.out.println("");
 				System.out.print("Digite sua opção: ");
 				resposta = sc.nextLine();
+				
 
 			}
 		}
 
 	}
-	public static void  notadoAluno() {
+	public static  void  notadoAluno() {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		System.out.println();
 		System.out.println("Digite a nota do aluno: ");
 		int codigo = sc.nextInt();
 		
-		Dados._ListaAluno().get(0).setPresenca(codigo);              //.setPresenca(codigo);
 		
+		_listaAluno.get(0).setPresenca(codigo);
+		//Dados._ListaAluno().get(0).setPresenca(codigo);              //.setPresenca(codigo);
+		sc.close();
 	}
 }
