@@ -55,19 +55,27 @@ public class Professor {
 
 			
 			String resposta;
+			String resposta2;
 			
 			while(true){
 				
 				System.out.println();
-				System.out.print("Digite 1 para lança notas, ou 2 para voltar ao menu principal.");
-				resposta = sc.nextLine();
+				System.out.println("******************************************");
+				System.out.println("* 1 - Lança notas dos alunos             *");	
+				System.out.println("* 2 - Voltar ao menu                     *");
+			   	System.out.println("******************************************");;
+				resposta2 = sc.nextLine();
 				
-				if(resposta.equals("2") ) {
+				if(resposta2.equals("2") ) {
 					return;
 					
 				}
-				System.out.println();
-				
+				else {
+					System.out.println();
+					System.out.print("Digite o ID do aluno: ");
+					resposta = sc.nextLine();
+					
+				}				
 				
 			switch (resposta) {
 
@@ -123,7 +131,12 @@ public class Professor {
 		
 		int valorTotal= (codigo+codigo1+codigo2+codigo3) /4;
 		
-
+		if(valorTotal >= 7) {
+			System.out.println("Aprovado");
+		}
+		else {
+			System.out.println("Reprovado");
+		}
 		
 		_listaAluno.get(n).setPresenca(valorTotal);
 	}
