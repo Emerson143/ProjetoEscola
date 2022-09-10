@@ -55,7 +55,7 @@ public class Professor {
 
 			
 			String resposta;
-			String resposta2;
+			
 			
 			while(true){
 				
@@ -64,9 +64,9 @@ public class Professor {
 				System.out.println("* 1 - Lança notas dos alunos             *");	
 				System.out.println("* 2 - Voltar ao menu                     *");
 			   	System.out.println("******************************************");;
-				resposta2 = sc.nextLine();
+				resposta = sc.nextLine();
 				
-				if(resposta2.equals("2") ) {
+				if(resposta.equals("2") ) {
 					return;
 					
 				}
@@ -85,7 +85,7 @@ public class Professor {
 
 				NotaDoAluno(0);
 				System.out.print("Nota do aluno: " + _listaAluno.get(0).getPresenca());
-
+				
 				break;
 				
 			case "268":
@@ -131,14 +131,22 @@ public class Professor {
 		
 		int valorTotal= (codigo+codigo1+codigo2+codigo3) /4;
 		
-		if(valorTotal >= 7) {
-			System.out.println("Aprovado");
-		}
-		else {
-			System.out.println("Reprovado");
-		}
 		
 		_listaAluno.get(n).setPresenca(valorTotal);
 	}
 
+	
+	public static void Boletim(int n) {
+		
+		
+		
+		int valorTotal = _listaAluno.get(n).getPresenca();
+
+		if(valorTotal >= 7) {
+			System.out.println("Aluno Aprovado");
+		}
+		else {
+			System.out.println(" Aluno Reprovado");
+		}
+	}
 }

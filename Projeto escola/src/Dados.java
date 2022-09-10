@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
 public class Dados {
-
+	
+	ArrayList < Aluno > listaAluno;
 	
 	public static ArrayList < Aluno > _ListaAluno() {
 		

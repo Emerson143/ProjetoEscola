@@ -5,7 +5,7 @@ public class Aluno {
 	private String name;
 	private int id;
 
-	private int presenca;
+	 int presenca;
 	private Turma turma;
 
 	public Aluno(String name, int id, int presenca, Turma turma) {
@@ -65,31 +65,52 @@ public class Aluno {
 		Boolean laco = true;
 
 		System.out.println("===========================================");
-		System.out.println("=         BEM VINDO ALUNO            =");
+		System.out.println("=         BEM VINDO ALUNO                 =");
 		System.out.println("===========================================");
 
+		String resposta;
 		while (laco) {
-
+			
+			
+			
 			System.out.println();
 			System.out.println("******************************************");
-			System.out.println("* 1   Digite o seu ID       		      *");
-			System.out.println("******************************************");
-
-			System.out.print("Digite sua opção: ");
-			String resposta = sc.nextLine();
+			System.out.println("* 1 - Boletin                            *");	
+			System.out.println("* 2 - Voltar ao menu                     *");
+		   	System.out.println("******************************************");;
+			resposta = sc.nextLine();
+			
+			if(resposta.equals("2") ) {
+				return;
+				
+			}
+			else {
+				System.out.println();
+				System.out.print("Digite o ID do aluno: ");
+				resposta = sc.nextLine();
+				
+			}				
+			
 			System.out.println();
 
 			switch (resposta) {
 
 			case "261":
-				System.out.println(Dados._ListaAluno().get(0).toString());
+				System.out.println("Aluno: " + Dados._ListaAluno().get(0).getName());
+				System.out.println("Dados do aluno: " + Dados._ListaAluno().get(0).getTurma().toString());
+				System.out.print("Nota ");
+				Professor.Boletim(0);
+				
 				break;
 			case "268":
-				System.out.println(Dados._ListaAluno().get(1).toString());
+				System.out.println("Aluno: " + Dados._ListaAluno().get(1).getName());
+				System.out.print("Dados do aluno: " + Dados._ListaAluno().get(1).getTurma().toString());
+				Professor.Boletim(1);
 				break;
 			case "278":
-				System.out.println(Dados._ListaAluno().get(2).toString());
-
+				System.out.println("Aluno: " + Dados._ListaAluno().get(2).getName());
+				System.out.print("Dados do aluno: " + Dados._ListaAluno().get(2).getTurma().toString());
+				Professor.Boletim(2);
 				break;
 
 			default:
